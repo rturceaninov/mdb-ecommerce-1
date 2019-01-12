@@ -85,6 +85,18 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
+      inject: 'body',
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/pdp.html',
+      inject: 'body',
+      filename: 'pdp',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/contact-us.html',
+      inject: 'body',
+      filename: 'contactus',
     }),
     new CleanWebpackPlugin(['dist']),
   ],

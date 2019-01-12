@@ -1,23 +1,23 @@
 {
-  "name": "mdb-ecommerce",
+  "name": "mdb-ecommerce-1",
   "version": "1.0.0",
   "description": "Material design bootstrap ecommerce site",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --open --hot --host 0.0.0.0",
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitalicernomschi/mdb-ecommerce.git"
+    "url": "git+https://github.com/rturceaninov/mdb-ecommerce-1.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ruslan Turceaninov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitalicernomschi/mdb-ecommerce/issues"
+    "url": "https://github.com/rturceaninov/mdb-ecommerce-1/issues"
   },
-  "homepage": "https://github.com/vitalicernomschi/mdb-ecommerce#readme",
+  "homepage": "https://github.com/rturceaninov/mdb-ecommerce-1#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",

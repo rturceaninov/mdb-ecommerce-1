@@ -5,5 +5,10 @@ $fa-font-path: '~font-awesome/fonts';
 // Bootstrap 4
 @import '~bootstrap/scss/bootstrap';
 
-// @import './nav';
+@import './nav';
 @import './contact-us';
+
+@import './pdp';
+
+@import './components/checkbox';
+@import './components/pdp-viewer';

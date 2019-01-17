@@ -13,5 +13,4 @@ import '../vendors/mdb/js/mdb';
 // Fontawesome 5
 import './fa';
 
-// Example
-import './example';
+import './components/pdpViewer';

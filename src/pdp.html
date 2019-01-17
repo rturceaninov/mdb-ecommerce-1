@@ -6,86 +6,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <title>Material Design for Bootstrap</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
 </head>
 
+
 <body>
-  <div class="navbar-dark stylish-color d-flex justify-content-center">
-    <a class="navbar-brand d-inline-block d-lg-none" href="#">YOUR LOGO</a>
-  </div>
-
-  <nav class="navbar navbar-expand-lg navbar-dark elegant-color">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand d-none d-lg-inline-block" href="#">YOUR LOGO</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <ul class="navbar-nav ml-auto d-inline-flex d-lg-none">
-      <li class="nav-item">
-        <form class="form-inline ">
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          </div>
-        </form>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-user"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fas fa-heart"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fab fa-opencart" color="coral"></i>
-        </a>
-      </li>
-    </ul>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Women</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Men</a>
-        </li>
-
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Sales</a>
-          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Winter collection</a>
-            <a class="dropdown-item" href="#">Summer collection</a>
-            <a class="dropdown-item" href="#">Sport Accessories</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/contactus">Contact Us</a>
-        </li>
-
-      </ul>
-      <!-- Links -->
-
-
-      <ul class="navbar-nav ml-auto d-none d-lg-flex">
+    <!--Navbar-->
+    <div class="navbar-dark stylish-color d-flex justify-content-center">
+      <a class="navbar-brand d-inline-block d-lg-none" href="#">YOUR LOGO</a>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color">
+  
+      <!-- Navbar brand -->
+      <a class="navbar-brand d-none d-lg-inline-block" href="#">YOUR LOGO</a>
+  
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <ul class="navbar-nav ml-auto d-flex d-lg-none navbar-nav-sm">
         <li class="nav-item">
           <form class="form-inline ">
             <div class="md-form my-0">
@@ -94,28 +38,312 @@
           </form>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fas fa-user"></i>
-              </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">
-              <i class="fas fa-heart"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <i class="fab fa-opencart"></i>
           </a>
         </li>
       </ul>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+  
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Sales</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Winter collection</a>
+              <a class="dropdown-item" href="#">Summer collection</a>
+              <a class="dropdown-item" href="#">Sport</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/contactus.html">Contact Us</a>
+            </li>
+              
+        </ul>
+        <!-- Links -->
+  
+  
+        <ul class="navbar-nav ml-auto d-none d-lg-flex">
+          <li class="nav-item">
+            <form class="form-inline ">
+              <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="fab fa-opencart" color="coral"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+  
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="pdp-image-container product-section">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" style="width:100%">
+          </div>
+  
+          <a class="prev" >❮</a>
+          <a class="next" >❯</a>
+
+          
+
+          <!-- onclick="plusSlides(-1)"
+          onclick="plusSlides(1)" -->
+  
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <section class="product product-section">
+          <h2 class="product__name h3-responsive font-weight-bold dark-grey-text text-center text-md-left">iPad PRO</h2>
+          <div class="text-center text-md-left">
+            <span class="badge badge-success">bestseller</span>
+            <span class="badge badge-danger">SALE</span>
+          </div>
+  
+          <h3 class="h3-responsive text-center text-md-left mt-4 mb-4">
+            <span class="red-text font-weight-bold">
+              <strong>$49</strong>
+            </span>
+            <span class="grey-text">
+              <small>
+                <s>$89</s>
+              </small>
+            </span>
+          </h3>
+          <p class="text-center text-md-left"><strong>Size: </strong>9.6-inch</p>
+          <p class="text-center text-md-left"><strong>Availability: </strong>In stock</p>
+          <ul class="product__rating text-center text-md-left">
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+            <li><i class="far fa-star"></i></li>
+          </ul>
+          <!--Accordion wrapper-->
+          <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+  
+            <!-- Accordion card -->
+            <div class="card m-b-2">
+  
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingOne1">
+                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                  aria-controls="collapseOne1">
+                  <h5 class="mb-0 dark-grey-text">
+                    Description<i class="fas fa-angle-down rotate-icon ml-2"></i>
+                  </h5>
+                </a>
+              </div>
+  
+              <!-- Card body -->
+              <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                <div class="card-body">
+                  He he Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                  nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                  farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                  labore sustainable VHS.
+                </div>
+              </div>
+  
+            </div>
+            <!-- Accordion card -->
+  
+            <!-- Accordion card -->
+            <div class="card">
+  
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false"
+                  aria-controls="collapseTwo2">
+                  <h5 class="mb-0 dark-grey-text">
+                    Reviews<i class="fas fa-angle-down rotate-icon ml-2"></i>
+                  </h5>
+                </a>
+              </div>
+  
+              <!-- Card body -->
+              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                  nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                  farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                  labore sustainable VHS.
+                </div>
+              </div>
+  
+            </div>
+            <!-- Accordion card -->
+  
+            <!-- Accordion card -->
+            <div class="card">
+  
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingThree3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                  aria-expanded="false" aria-controls="collapseThree3">
+                  <h5 class="mb-0 dark-grey-text">
+                    Shipping<i class="fas fa-angle-down rotate-icon ml-2"></i>
+                  </h5>
+                </a>
+              </div>
+  
+              <!-- Card body -->
+              <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                  wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                  nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                  farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                  labore sustainable VHS.
+                </div>
+              </div>
+  
+            </div>
+            <!-- Accordion card -->
+  
+          </div>
+          <!-- Accordion wrapper -->
+  
+          <section class="color">
+            <div class="mt-5 mb-5 ml-2">
+              <p class="grey-text">Choose your color</p>
+              <label class="checkbox">
+                <span class="sr-only">Green</span>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark green"></span>
+              </label>
+              <label class="checkbox">
+                <span class="sr-only">Red</span>
+                <input type="radio" name="radio">
+                <span class="checkmark red"></span>
+              </label>
+              <label class="checkbox">
+                <span class="sr-only">Yellow</span>
+                <input type="radio" name="radio">
+                <span class="checkmark yellow"></span>
+              </label>
+              <label class="checkbox">
+                <span class="sr-only">Blue</span>
+                <input type="radio" name="radio">
+                <span class="checkmark blue"></span>
+              </label>
+              <label class="checkbox">
+                <span class="sr-only">Orange</span>
+                <input type="radio" name="radio">
+                <span class="checkmark orange"></span>
+              </label>
+            </div>
+          </section>
+            
+          <div class="product__actions">
+            <button type="button" class="btn stylish-color-dark">
+              <i class="fab fa-opencart mr-3" color="coral"></i>Add to Cart
+            </button>
+            <button type="button" class="btn stylish-color-dark">
+              <i class="fas fa-heart" ></i>
+            </button>
+          </div>
+        </section>
+      </div>
     </div>
-    <!-- Collapsible content -->
-  </nav>
-  <!--/.Navbar-->
-
-  <h1>PDP</h1>
-
+  
 
 
   <!-- Footer -->
@@ -203,30 +431,30 @@
 
         </div>
         <!-- Grid column -->
-<!-- Grid column -->
-<div class="col-md-3 mb-md-0 mb-3">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
 
-  <!-- Content -->
-  <h5 class="text-uppercase">For all ocassions</h5>
+          <!-- Content -->
+          <h5 class="text-uppercase">For all ocassions</h5>
 
-  <ul class="list-unstyled">
-    <li>
-      <a href="#!">For traveling</a>
-    </li>
-    <li>
-      <a href="#!">Sport</a>
-    </li>
-    <li>
-      <a href="#!">For diving</a>
-    </li>
-    <li>
-      <a href="#!">Hunting and fishing</a>
-    </li>
-  </ul>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">For traveling</a>
+            </li>
+            <li>
+              <a href="#!">Sport</a>
+            </li>
+            <li>
+              <a href="#!">For diving</a>
+            </li>
+            <li>
+              <a href="#!">Hunting and fishing</a>
+            </li>
+          </ul>
 
 
-</div>
-<!-- Grid column -->
+        </div>
+        <!-- Grid column -->
 
       </div>
       <!-- Grid row -->
@@ -242,7 +470,37 @@
 
   </footer>
   <!-- Footer -->
-
+  <script>
+    
+      var slideIndex = 1;
+    showSlides(slideIndex);
+    // Next/previous controls
+    
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 
 </html>

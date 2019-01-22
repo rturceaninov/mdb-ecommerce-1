@@ -4,11 +4,13 @@
   "description": "Material design bootstrap ecommerce site",
   "main": "index.js",
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint 'src/js/**/*.js'",
-    "eslint-watch": "./node_modules/.bin/esw 'src/js/**/*.js' -w --quiet",
-    "pretest": "npm run eslint",
+    "eslint": "eslint 'src/js/**/*.js'",
+    "stylint": "stylint src/scss/**/*.scss'",
+    "stylint-watch": "stylint src/scss/**/*.scss -w",
+    "eslint-watch": "esw src/js/**/*.js -w --quiet",
+    "pretest": "npm run eslint && npm run stylelint",
     "dev": "webpack-dev-server --mode development --open --hot --host 0.0.0.0",
-    "build": "webpack --mode production"
+    "build": "npm run stylint && webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -43,11 +45,13 @@
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylint": "^1.5.9",
     "webpack": "4.19.1",
     "webpack-cli": "2.1.4",
     "webpack-dev-server": "^3.1.14"
   },
-    "dependencies": {
+  "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",
     "@fortawesome/fontawesome-free-brands": "^5.0.12",
     "@fortawesome/fontawesome-free-regular": "^5.0.12",

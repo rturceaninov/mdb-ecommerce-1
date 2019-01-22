@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint 'src/js/**/*.js'",
-    "stylint": "stylint src/scss/**/*.scss'",
+    "stylint": "stylint src/scss/**/*.scss",
     "stylint-watch": "stylint src/scss/**/*.scss -w",
     "eslint-watch": "esw src/js/**/*.js -w --quiet",
-    "pretest": "npm run eslint && npm run stylelint",
+    "pretest": "npm run eslint && npm run stylint",
     "dev": "webpack-dev-server --mode development --open --hot --host 0.0.0.0",
-    "build": "npm run stylint && webpack --mode production"
+    "build": "npm run pretest && webpack --mode production"
   },
   "repository": {
     "type": "git",

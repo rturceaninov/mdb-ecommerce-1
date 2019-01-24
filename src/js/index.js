@@ -14,3 +14,8 @@ import '../vendors/mdb/js/mdb';
 import './fa';
 
 import './components/pdpViewer';
+
+// polifill to picture tag
+import 'picturefill';
+
+import './product-list';

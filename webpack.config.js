@@ -72,6 +72,14 @@ module.exports = {
           useRelativePath: true,
         },
       },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        options: {
+          name: '[name].[ext]',
+          useRelativePath: true,
+        },
+      },
     ],
   },
   plugins: [
@@ -102,6 +110,11 @@ module.exports = {
       template: 'src/error.html',
       inject: 'body',
       filename: 'error.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/product-list.html',
+      inject: 'body',
+      filename: 'product-list.html',
     }),
     new CleanWebpackPlugin(['dist']),
   ],

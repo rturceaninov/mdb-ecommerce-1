@@ -30,14 +30,16 @@ function plusSlides(n) {
   showSlides(pdpImageIndex += n);
 }
 
-showSlides(pdpImageIndex);
+if (document.getElementsByClassName('pdp-image').length) {
+  showSlides(pdpImageIndex);
 
-document.querySelectorAll('.prev')[0].addEventListener('click', () => plusSlides(-1));
-document.querySelectorAll('.next')[0].addEventListener('click', () => plusSlides(1));
-document.querySelectorAll('.thumbnail-container')[0].addEventListener('click', ({ target: { dataset: { id = '' } = {} } = {} } = {}) => {
-  const newPdpImageIndex = +id;
+  document.querySelectorAll('.prev')[0].addEventListener('click', () => plusSlides(-1));
+  document.querySelectorAll('.next')[0].addEventListener('click', () => plusSlides(1));
+  document.querySelectorAll('.thumbnail-container')[0].addEventListener('click', ({ target: { dataset: { id = '' } = {} } = {} } = {}) => {
+    const newPdpImageIndex = +id;
 
-  if (newPdpImageIndex && newPdpImageIndex !== pdpImageIndex) {
-    showSlides(newPdpImageIndex);
-  }
-});
+    if (newPdpImageIndex && newPdpImageIndex !== pdpImageIndex) {
+      showSlides(newPdpImageIndex);
+    }
+  });
+}
